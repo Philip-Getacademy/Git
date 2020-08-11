@@ -48,6 +48,10 @@
             grid-area: mainContent;
         }
 
+        p {
+            padding: 20px;
+        }
+
         div.footer {
             background-color: lightgrey;
             grid-area: footer;
