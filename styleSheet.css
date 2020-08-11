@@ -7,8 +7,8 @@
             height: 100vh;
             display: grid;
             grid-template-columns: 200px 1fr;
-            grid-template-rows: 20px 10fr 20px;
-            grid-template-areas: 'menu header' 
+            grid-template-rows: 100px 10fr 20px;
+            grid-template-areas: 'header header' 
                                  'menu mainContent'
                                  'footer footer';
         }
@@ -16,10 +16,30 @@
         div.header {
             background-color: aqua;
             grid-area: header;
+            text-align: center;
+            background-image: url("bilder/spaceSmall.png");
+        }
+
+        div.header.h1, div.menu, div.footer, #menu {
+            text-align: center;
+        }
+
+        h1 {
+            text-shadow: -2px 0px #FFFFFF;
+        }
+
+        .menu {
+            padding-top: 10px;
+        }
+        
+        #menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 20px;
         }
 
         div.menu {
-            background-color: aquamarine;
+            background-color: white;
             grid-area: menu;
         }
 
@@ -36,7 +56,7 @@
         @media only screen and (max-width: 600px) {
             div.page {
                 grid-template-columns: 1fr;
-                grid-template-rows: 20px 1fr 4fr 20px;
+                grid-template-rows: 100px 2fr 4fr 20px;
                 grid-template-areas: 'header' 
                                      'menu'
                                      'mainContent'
