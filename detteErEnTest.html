@@ -54,7 +54,7 @@
     // Initiating constructor function
     pushTrigger();
 
-    // Manipulating array order with 'utvikling' function and checking if adjacent squares IS blank, shuffleing both values
+    // Manipulating array order with 'utvikling' function and checking if adjacent squares IS blank, shuffeling both values
 function trykk(tagElement, alt1, alt2, alt3, alt4) {
 
     if (document.getElementById(alt1).innerHTML == blank) {
@@ -113,8 +113,8 @@ function utvikling (){
 function arrayCompare() {
     
     for (var i = 0; i < arraySolution.length; i++){
-        if (arraySort[i] !== arraySolution[i]) {
-            compare = false;         
+        if (arraySort[i] != arraySolution[i]) {
+            compare = false;      
 		}
         else {
             compare = true;
