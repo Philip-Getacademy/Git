@@ -1,1 +1,1 @@
-﻿a { text-decoration: none;}
+﻿a, a:link:active, a:visited:active { text-decoration: none;	color:black;}
