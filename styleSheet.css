@@ -3,6 +3,13 @@
             margin: 0;
         }
 
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            margin-left: -200px;
+        }
+
         div.page {
             height: 100vh;
             display: grid;
@@ -44,8 +51,12 @@
         }
 
         div.mainContent {
-            background-color: blanchedalmond;
             grid-area: mainContent;
+        }
+
+        svg {
+            height: 50vh;
+            width: 300px;
         }
 
         p {
