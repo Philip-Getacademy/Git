@@ -7,6 +7,28 @@
     <link rel="stylesheet" type="text/css" href="https://philip-getacademy.github.io/Git/junkSheet.css">
 
     <script></script>
+    <style>
+        #bits1 {
+            display: flex;
+            flex-direction: row;
+            margin-top: 50px;
+            height: 200px;
+            width: 400px;
+        }
+
+            #bits1 button {
+                border: none;
+                height: 50px;
+                width: 100px;
+            }
+
+            #bits1 div {
+                background-color: aqua;
+                margin-left: 50px;
+                height: 50px;
+                width: 50px;
+            }
+    </style>
 </head>
 <body>
 
@@ -24,18 +46,35 @@
         <div class="mainContent">
             <div class="center">
                 
-                <div id="onClick">
-                    <button onclick="onClick()">Klikk på meg!</button>
+                <div id="bits1">
+                    <button id="onClick" onclick="changeColorButtonAndDiv(this)">Klikk på meg!</button>
+                    <div id="changeColorDiv"></div>
                 </div>
 
             </div>
         </div>
         <div class="footer">Denne kan brukes som kontakt og annen funksjonalitet på siden</div>
     </div>
-</body>
-<style>
-    #onClick {
-        
-    }
-</style>
-</html>
+    <script>
+
+        var clicked = false;
+        function changeColorButtonAndDiv(colourButtonChange) {
+
+            if (clicked == false) {
+
+                document.getElementById('onClick').style.backgroundColor = "aqua";
+                document.getElementById('changeColorDiv').style.backgroundColor = "white";
+                clicked = true;
+
+
+            } else {
+
+                document.getElementById('onClick').style.backgroundColor = "white";
+                document.getElementById('changeColorDiv').style.backgroundColor = "aqua";
+                clicked = false;
+
+            }
+        }
+
+    </script>
+</body></html>
