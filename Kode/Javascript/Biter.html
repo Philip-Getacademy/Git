@@ -27,7 +27,7 @@
         }
 
         #bits1 div {
-            background-color: aqua;
+            background-color: #7ad8d8;
             margin-left: 50px;
             height: 50px;
             width: 100px;
@@ -52,7 +52,7 @@
         #rotationLeft, #rotationRight   {}
 
         #rotationLeft   {height: 25px; width: 110px; background-color: white;    margin-right:5px;  }
-        #rotationRight  {height: 25px; width: 110px; background-color: white;   margin-left:5px;  }
+        #rotationRight  {height: 25px; width: 110px; background-color: white;    margin-left:5px;  }
 
     </style>
 </head>
@@ -115,15 +115,15 @@
 
         /*  Bits 2 */
 
-/*      Declaring flex properties of #bits2 childNodes                                                                  */
+/*      Declaring flex properties of #bits2 childNodes                                                  */
         document.getElementById('bits2').children[0].style.justifyContent = "flex-end";
         document.getElementById('bits2').children[1].style.justifyContent = "flex-start";
-        /*     Creating variables for useability inside functions                                                       */
+        /*     Creating variables for useability inside functions                                       */
 
         var left =  document.getElementById('bits2').children[0];
         var right = document.getElementById('bits2').children[1];
         
-/*      Mouseover trigger for the rotating planks                                                                       */
+/*      Mouseover trigger for the rotating planks                                                       */
         document.getElementById('bits2').children[0].onmouseover = function ()    {rotationLeft()   };
         document.getElementById('bits2').children[1].onmouseover = function ()    {rotationRight()  };
 
