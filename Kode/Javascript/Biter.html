@@ -76,12 +76,13 @@
                     <button id="onClick" onclick="changeColorButtonAndDiv()">Klikk på meg!</button>
                     <div id="changeColorDiv"></div>
                 </div>
+
                 <div id="bits2">
                     <div id="brokenRectangle">
-                        <div id="rotationLeft" onclick="clicked(this)"></div>
+                        <div id="rotationLeft"></div>
                     </div>
                     <div id="brokenRectangle">
-                        <div id="rotationRight" onclick="clicked(this)"></div>
+                        <div id="rotationRight"></div>
                     </div>
                 </div>
 
@@ -123,8 +124,8 @@
         var right = document.getElementById('bits2').children[1];
         
 /*      Mouseover trigger for the rotating planks                                                                       */
-        document.getElementById('bits2').children[0].onmouseover = function ()    {rotationLeft()};
-        document.getElementById('bits2').children[1].onmouseover = function ()    {rotationRight()};
+        document.getElementById('bits2').children[0].onmouseover = function ()    {rotationLeft()   };
+        document.getElementById('bits2').children[1].onmouseover = function ()    {rotationRight()  };
 
         
         /* Mouseover triggers function */
@@ -133,7 +134,7 @@
                 setTimeout(function () {
 
                     left.style.transition = "all 0.6s cubic-bezier(.55,.09,.62,-0.23) 0s";
-                    left.style.transform = "rotate(97deg)";
+                    left.style.transform = "rotate(90deg)";
 
                 }, 1000);
 
@@ -145,7 +146,7 @@
             setTimeout(function () {
 
                 right.style.transition = "all 0.6s cubic-bezier(.55,.09,.62,-0.23) 0s";
-                right.style.transform = "rotate(-97deg)";
+                right.style.transform = "rotate(-90deg)";
 
             }, 1000);
 
