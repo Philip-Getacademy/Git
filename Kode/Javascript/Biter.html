@@ -44,12 +44,6 @@
             border-radius: 100px;
             background-color:#7ad8d8;
         }
-        #bits2 div:nth-child(2) {
-
-        }
-
-
-        #rotationLeft, #rotationRight   {}
 
         #rotationLeft   {height: 25px; width: 110px; background-color: white;    margin-right:5px;  }
         #rotationRight  {height: 25px; width: 110px; background-color: white;    margin-left:5px;   }
@@ -124,8 +118,10 @@
         var right = document.getElementById('bits2').children[1];
         
 /*      Mouseover trigger for the rotating planks                                                       */
-        document.getElementById('bits2').children[0].onmouseover = function ()    {rotationLeft()   };
-        document.getElementById('bits2').children[1].onmouseover = function ()    {rotationRight()  };
+        document.getElementById('bits2').children[0].onmouseover = function () {    rotationLeft()      };
+        document.getElementById('bits2').children[1].onmouseover = function () {    rotationRight()     };
+
+        
 
         
         /* Mouseover triggers function */
